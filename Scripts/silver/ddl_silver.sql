@@ -44,8 +44,8 @@ dwh_create_date DATETIME2 DEFAULT GETDATE()
 IF OBJECT_ID ('silver.crm_sales_details', 'U') IS NOT NULL
 	DROP TABLE silver.crm_sales_details;
 CREATE TABLE silver.crm_sales_details(
-sls_ord_num INTEGER,
-sls_prd_key VARCHAR(50),
+sls_ord_num NVARCHAR(50),
+sls_prd_key NVARCHAR(50),
 sls_cust_id INTEGER,
 sls_order_dt DATE,
 sls_ship_dt DATE,
